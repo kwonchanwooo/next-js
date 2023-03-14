@@ -1,15 +1,9 @@
-import Head from 'next/head';
+import Layout from '@/components/Layout';
 
 export default function Sub2() {
 	return (
-		<>
-			<Head>
-				<title>Sub2</title>
-				<link rel='icon' href='/favicon.ico' />
-			</Head>
-			<main>
-				<h1>Sub2</h1>
-			</main>
-		</>
+		<Layout tit={'Sub2'}>
+			<p>Sub2 contents</p>
+		</Layout>
 	);
 }

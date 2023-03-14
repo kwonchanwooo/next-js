@@ -7,7 +7,10 @@ export default function Layout(props) {
 				<title>Dcodelab</title>
 				<link rel='icon' href='favicon.ico' />
 			</Head>
-			<main>{props.children}</main>
+			<section className={`sub ${props.tit}`}>
+				<h1>{props.tit}</h1>
+				{props.children}
+			</section>
 		</>
 	);
 }
